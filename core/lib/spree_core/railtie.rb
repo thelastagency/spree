@@ -38,8 +38,8 @@ module SpreeCore
           Calculator::FlexiRate,
           Calculator::PerItem,
           Calculator::SalesTax,
-          Calculator::Vat,
-          Calculator::PriceBucket
+          Calculator::Vat#,
+          #Calculator::PriceBucket
         ].each{|c_model|
           begin
             c_model.register if c_model.table_exists?
